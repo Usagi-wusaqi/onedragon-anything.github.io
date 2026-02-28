@@ -13,49 +13,32 @@ export default hopeTheme({
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "/logo_zzz.ico",
 
   // repo: "vuepress-theme-hope/vuepress-theme-hope",
 
   docsDir: "src",
 
-  locales: {
-    "/en/": {
-      // navbar
-      navbar: enNavbar,
-
-      // sidebar
-      sidebar: enSidebar,
-
-      footer: "Theme by <a href=\"https://theme-hope.vuejs.press/\" target=\"_blank\">VuePress Theme Hope</a>",
-
-      displayFooter: true,
-
-      // metaLocales: {
-      //   editLink: "Edit this page on GitHub",
-      // },
-    },
-
-    /**
-     * Chinese locale config
-     */
-    "/": {
-      // navbar
+  locales: (() => {
+    const sharedLocaleConfig = {
       navbar: zhNavbar,
-
-      // sidebar
       sidebar: zhSidebar,
-
       footer: "Theme by <a href=\"https://theme-hope.vuejs.press/\" target=\"_blank\">VuePress Theme Hope</a>",
-
       displayFooter: true,
+    };
 
-      // page meta
-      // metaLocales: {
-      //   editLink: "在 GitHub 上编辑此页",
-      // },
-    },
-  },
+    return {
+      "/en/": {
+        ...sharedLocaleConfig,
+        navbar: enNavbar,
+        sidebar: enSidebar,
+      },
+
+      "/zzz/": { ...sharedLocaleConfig, logo: "/logo_zzz.ico" },
+      "/sr/": { ...sharedLocaleConfig, logo: "/logo_sr.ico" },
+      "/": { ...sharedLocaleConfig },
+    };
+  })(),
 
   encrypt: {
     config: {
