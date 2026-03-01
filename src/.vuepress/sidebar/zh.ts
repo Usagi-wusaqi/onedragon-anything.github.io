@@ -66,7 +66,7 @@ export const zhSidebar = sidebar({
           collapsible: true,
           children: [
             {
-              text: "快速开始",
+              text: "快速开始-一条龙",
               link: "feat_one_dragon/quickstart"
             },
             {
