@@ -49,6 +49,11 @@ export const zhSidebar = sidebar({
       link: "config",
     },
     {
+      text: "首次运行检查清单",
+      icon: "check-double",
+      link: "first_run_checklist",
+    },
+    {
       text: "常见问题",
       icon: "question",
       link: "faq",
@@ -114,6 +119,10 @@ export const zhSidebar = sidebar({
         {
           text: "功能-应用运行",
           link: "feat_standalone_app"
+        },
+        {
+          text: "GUI 导航指南",
+          link: "gui_guide"
         },
       ],
     },
