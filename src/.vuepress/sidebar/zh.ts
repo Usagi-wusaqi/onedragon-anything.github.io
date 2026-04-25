@@ -111,6 +111,10 @@ export const zhSidebar = sidebar({
           text: "功能-手柄支持",
           link: "feat_gamepad"
         },
+        {
+          text: "功能-应用运行",
+          link: "feat_standalone_app"
+        },
       ],
     },
     {
