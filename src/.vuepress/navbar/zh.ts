@@ -63,6 +63,11 @@ export const zhNavbar = navbar([
         link: "quickstart",
       },
       {
+        text: "界面导航",
+        icon: "display",
+        link: "gui_guide",
+      },
+      {
         text: "必要设置",
         icon: "triangle-exclamation",
         link: "config",
@@ -85,20 +90,22 @@ export const zhNavbar = navbar([
             link: "feat_one_dragon/onedragon"
           },
           {
-            text: "功能-零号空洞",
-            link: "feat_one_dragon/hollow_zero"
+            text: "功能-应用运行",
+            link: "feat_standalone_app"
+          }
+        ]
+      },
+      {
+        text: "设置说明",
+        icon: "gear",
+        children: [
+          {
+            text: "设置-游戏设置",
+            link: "setting_game"
           },
           {
-            text: "功能-锄大地",
-            link: "feat_one_dragon/world_patrol"
-          },
-          {
-            text: "功能-通知系统",
-            link: "feat_notify"
-          },
-          {
-            text: "功能-手柄支持",
-            link: "feat_gamepad"
+            text: "设置-通知设置",
+            link: "setting_notify"
           }
         ]
       },

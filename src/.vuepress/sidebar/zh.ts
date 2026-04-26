@@ -44,6 +44,11 @@ export const zhSidebar = sidebar({
       link: "quickstart",
     },
     {
+      text: "界面导航",
+      icon: "display",
+      link: "gui_guide",
+    },
+    {
       text: "必要设置",
       icon: "triangle-exclamation",
       link: "config",
@@ -104,20 +109,22 @@ export const zhSidebar = sidebar({
           ]
         },
         {
-          text: "功能-通知系统",
-          link: "feat_notify"
-        },
-        {
-          text: "功能-手柄支持",
-          link: "feat_gamepad"
-        },
-        {
           text: "功能-应用运行",
           link: "feat_standalone_app"
+        }
+      ],
+    },
+    {
+      text: "设置说明",
+      icon: "gear",
+      children: [
+        {
+          text: "设置-游戏设置",
+          link: "setting_game"
         },
         {
-          text: "GUI 导航指南",
-          link: "gui_guide"
+          text: "设置-通知设置",
+          link: "setting_notify"
         },
       ],
     },
