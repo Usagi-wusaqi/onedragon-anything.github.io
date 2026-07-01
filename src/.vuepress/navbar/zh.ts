@@ -19,32 +19,9 @@ export const zhNavbar = navbar([
       },
       {
         text: "功能说明",
-        prefix: "docs",
-        children: [
-          {
-            text: "功能-一条龙",
-            link: "feat_one_dragon"
-          },
-          {
-            text: "功能-锄大地",
-            link: "feat_world_patrol"
-          },
-          {
-            text: "功能-模拟宇宙",
-            link: "feat_sim_uni"
-          }
-        ]
+        icon: "lightbulb",
+        link: "docs/feat_one_dragon"
       },
-      {
-        text: "贡献&开发",
-        prefix: "dev",
-        children: [
-          {
-            text: "说明",
-            link: "contribution",
-          }
-        ]
-      }
     ]
   },
   {
@@ -80,74 +57,46 @@ export const zhNavbar = navbar([
       {
         text: "功能说明",
         icon: "lightbulb",
-        children: [
-          {
-            text: "功能-游戏助手",
-            link: "feat_game_assistant"
-          },
-          {
-            text: "功能-一条龙",
-            link: "feat_one_dragon/onedragon"
-          },
-          {
-            text: "功能-应用运行",
-            link: "feat_standalone_app"
-          }
-        ]
+        link: "feat/feat_one_dragon/onedragon"
       },
       {
         text: "设置说明",
         icon: "gear",
-        children: [
-          {
-            text: "设置-游戏设置",
-            link: "setting_game"
-          },
-          {
-            text: "设置-通知设置",
-            link: "setting_notify"
-          }
-        ]
+        link: "setting/setting_game"
       },
       {
         text: "自动战斗教程",
         icon: "book",
-        prefix: "auto_battle_guide",
-        children: [
-          {
-            text: "基础手册",
-            link: "basic/basic_00_intro",
-          },
-          {
-            text: "参考指南",
-            link: "reference/states_enum",
-          },
-          {
-            text: "实战教程",
-            link: "tutorial/zhu_yuan_01",
-          },
-          {
-            text: "冷门知识",
-            link: "other/battle_knowledge",
-          }
-        ]
+        link: "auto_battle_guide/basic/basic_00_intro"
+      },
+    ],
+  },
+  {
+    text: "开发",
+    icon: "code-branch",
+    prefix: "/dev/zh",
+    children: [
+      {
+        text: "简介",
+        icon: "home",
+        link: "home"
+      },
+      {
+        text: "概念说明",
+        icon: "lightbulb",
+        link: "concept"
+      },
+      {
+        text: "路线图",
+        icon: "route",
+        link: "roadmap"
       },
       {
         text: "贡献&开发",
         icon: "code-branch",
-        prefix: "dev",
-        children: [
-          {
-            text: "说明",
-            link: "contribution",
-          },
-          {
-            text: "路线图",
-            link: "roadmap",
-          }
-        ]
+        link: "contribution"
       }
-    ],
+    ]
   },
   {
     text: "小工具",
@@ -188,7 +137,7 @@ export const zhNavbar = navbar([
   },
   {
     text: "点赞",
-    prefix: "/other/zh/like",
+    prefix: "/like",
     children: [
       {
         text: "点赞",

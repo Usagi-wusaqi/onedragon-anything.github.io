@@ -64,7 +64,7 @@ export const zhSidebar = sidebar({
       children: [
         {
           text: "功能-游戏助手",
-          link: "feat_game_assistant"
+          link: "feat/feat_game_assistant"
         },
         {
           text: "功能-一条龙",
@@ -72,49 +72,53 @@ export const zhSidebar = sidebar({
           children: [
             {
               text: "一条龙",
-              link: "feat_one_dragon/onedragon"
+              link: "feat/feat_one_dragon/onedragon"
             },
             {
               text: "体力计划",
-              link: "feat_one_dragon/charge_plan"
+              link: "feat/feat_one_dragon/charge_plan"
             },
             {
               text: "恶名狩猎",
-              link: "feat_one_dragon/notorious_hunt"
+              link: "feat/feat_one_dragon/notorious_hunt"
             },
             {
               text: "随便观",
-              link: "feat_one_dragon/suibian"
+              link: "feat/feat_one_dragon/suibian"
+            },
+            {
+              text: "每日签到",
+              link: "feat/feat_one_dragon/daily_signin"
             },
             {
               text: "录像店营业",
-              link: "feat_one_dragon/random_play"
+              link: "feat/feat_one_dragon/random_play"
             },
             {
               text: "咖啡店",
-              link: "feat_one_dragon/coffee"
+              link: "feat/feat_one_dragon/coffee"
             },
             {
               text: "零号空洞",
-              link: "feat_one_dragon/hollow_zero"
+              link: "feat/feat_one_dragon/hollow_zero"
             },
             {
               text: "式舆防卫战",
-              link: "feat_one_dragon/shiyu_defense"
+              link: "feat/feat_one_dragon/shiyu_defense"
             },
             {
               text: "锄大地",
-              link: "feat_one_dragon/world_patrol"
+              link: "feat/feat_one_dragon/world_patrol"
             },
             {
               text: "拿命验收",
-              link: "feat_one_dragon/life_on_line"
+              link: "feat/feat_one_dragon/life_on_line"
             },
           ]
         },
         {
           text: "功能-应用运行",
-          link: "feat_standalone_app"
+          link: "feat/feat_standalone_app"
         }
       ],
     },
@@ -124,11 +128,11 @@ export const zhSidebar = sidebar({
       children: [
         {
           text: "设置-游戏设置",
-          link: "setting_game"
+          link: "setting/setting_game"
         },
         {
           text: "设置-通知设置",
-          link: "setting_notify"
+          link: "setting/setting_notify"
         },
       ],
     },
@@ -227,33 +231,15 @@ export const zhSidebar = sidebar({
           link: "other/battle_knowledge",
         }
       ]
-    },
-    {
-      text: "贡献&开发",
-      icon: "code-branch",
-      prefix: "dev",
-      children: [
-        {
-          text: "说明",
-          link: "contribution",
-        },
-        {
-          text: "路线图",
-          link: "roadmap",
-        }
-      ]
     }
   ],
-  "/oda/zh/": "structure",
-  "/oda/zh/develop/": "structure",
+  "/dev/zh/": "structure",
   "/tools/zh/": "structure",
   "/other/zh/": "structure",
-  "/other/zh/like/": "structure",
-  "/oda/": "structure",
-  "/oda/develop/": "structure",
+  "/like/": "structure",
+  "/dev/": "structure",
   "/tools/": "structure",
   "/other/": "structure",
-  "/other/like/": "structure",
   "/sr/": "structure",
   "/zzz/": "structure",
 });
