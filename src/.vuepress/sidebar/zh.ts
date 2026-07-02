@@ -63,11 +63,18 @@ export const zhSidebar = sidebar({
       icon: "lightbulb",
       children: [
         {
+          text: "功能-仪表盘",
+          icon: "home",
+          link: "feat/feat_dashboard"
+        },
+        {
           text: "功能-游戏助手",
+          icon: "gamepad",
           link: "feat/feat_game_assistant"
         },
         {
           text: "功能-一条龙",
+          icon: "bus",
           collapsible: true,
           children: [
             {
@@ -118,7 +125,13 @@ export const zhSidebar = sidebar({
         },
         {
           text: "功能-应用运行",
+          icon: "table-cells-large",
           link: "feat/feat_standalone_app"
+        },
+        {
+          text: "功能-画中画",
+          icon: "play",
+          link: "feat/pip"
         }
       ],
     },
@@ -131,8 +144,24 @@ export const zhSidebar = sidebar({
           link: "setting/setting_game"
         },
         {
+          text: "设置-Overlay",
+          link: "setting/setting_overlay"
+        },
+        {
+          text: "设置-资源下载",
+          link: "setting/setting_resource_download"
+        },
+        {
+          text: "设置-脚本环境",
+          link: "setting/setting_env"
+        },
+        {
           text: "设置-通知设置",
           link: "setting/setting_notify"
+        },
+        {
+          text: "设置-自定义设置",
+          link: "setting/setting_custom"
         },
       ],
     },
